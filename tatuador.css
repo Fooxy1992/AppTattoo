@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tatuador-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+label {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+button {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+#tatuador-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tatuador-sobre,
+#tatuador-estilos {
+  margin-top: 0.5rem;
+}
+
+#agendamentos {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#proximos-agendamentos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#proximos-agendamentos li {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  #tatuador-info {
+    margin-right: 2rem;
+  }
+
+  #proximos-agendamentos {
+    width: 40%;
+  }
+}

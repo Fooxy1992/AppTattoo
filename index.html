@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estúdio de Tatuagem</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Estúdio de Tatuagem</h1>
+      <form id="tattooForm">
+        <label for="idea">Ideia da tatuagem:</label>
+        <input type="text" id="idea" name="idea" required />
+
+        <label for="bodyPart">Região do corpo:</label>
+        <select id="bodyPart" name="bodyPart" required>
+          <option value="">Selecione</option>
+          <option value="Braço">Braço</option>
+          <option value="Perna">Perna</option>
+          <option value="Costas">Costas</option>
+          <option value="Peito">Peito</option>
+          <option value="Pé">Pé</option>
+          <option value="Mão">Mão</option>
+        </select>
+
+        <label for="image">Anexar Imagem:</label>
+        <input
+          type="file"
+          id="image"
+          name="image"
+          accept=".jpg,.jpeg,.png"
+          required
+        />
+
+        <label for="date">Data preferida:</label>
+        <input type="date" id="date" name="date" required />
+
+        <button type="submit">Enviar Ideia</button>
+      </form>
+
+      <div id="response"></div>
+    </div>
+    <script src="script.js" defer></script>
+    <script src="tatuador.js" defer></script>
+  </body>
+</html>

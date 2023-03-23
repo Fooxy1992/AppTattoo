@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#tatuador-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+label {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+textarea {
+  height: 10rem;
+}
+
+button {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+#conversa {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+#conversa-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#concordar,
+#sugerir-preco,
+#resposta-agendamento {
+  margin-top: 2rem;
+  cursor: pointer;
+}
